@@ -1,0 +1,28 @@
+﻿@model NOLA_MVC4.ViewModels.NOLAProgramViewModel
+
+<div id="resultsGrid">
+@if (this.Model.ProgramsPerPage > 0){
+    WebGrid grid = new WebGrid(rowsPerPage: Model.ProgramsPerPage, ajaxUpdateContainerId: "results");
+    grid.Bind(Model.Programs, 
+              autoSortAndPage: false, 
+              rowCount: Model.NumberOfPrograms
+    ); 
+
+    <p>Total Programs found: @Html.Encode(grid.TotalRowCount)</p>
+@grid.GetHtml(
+htmlAttributes: new { id = "results" },
+        alternatingRowStyle: "gridAltRow",
+        headerStyle: "gridHeaderRow",
+    mode: WebGridPagerModes.All,
+    firstText: "<< First",
+    previousText: "< Prev",
+    nextText: "Next >",
+    lastText: "Last >>",
+    columns: new[] {
+        grid.Column(columnName: "nola", header: "Click Results Below", format: @<text>@Html.ActionLink((string)item.nola, "archiveDetails", "NOLA", new { nolaCode = item.nola}, null)</text>),
+        grid.Column(columnName: "series_title", header: "SERIES TITLE"),
+        grid.Column(columnName: "program_title", header: "PROGRAM TITLE"),
+        grid.Column(columnName: "episode_title", header: "EPISODE TITLE")
+})
+}
+</div>
