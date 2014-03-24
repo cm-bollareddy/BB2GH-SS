@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="pdbnolaContext-Web.config Connection String" description="pdbnolaContext Connection String used in web.config by the application to access the database." defaultvalue="Data Source=db9;Initial Catalog=pdbnola;Persist Security Info=True;User ID=pdbnola;Password=pdbnola1;MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Projects\\NOLA_MVC4\\NOLA_MVC4\\obj\\Test\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='pdbnolaContext']/@connectionString" />
+  </parameter>
+</parameters>

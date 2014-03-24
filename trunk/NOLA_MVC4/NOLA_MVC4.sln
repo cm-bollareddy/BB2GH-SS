@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOLA_MVC4", "NOLA_MVC4\NOLA_MVC4.csproj", "{A5316E11-7965-459C-9C86-797046E44C25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneLoginSAMLToolkit", "OneLoginSAMLToolkit\OneLoginSAMLToolkit.csproj", "{6360E355-3610-40EE-82D8-465E0DBBD96E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5316E11-7965-459C-9C86-797046E44C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5316E11-7965-459C-9C86-797046E44C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5316E11-7965-459C-9C86-797046E44C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5316E11-7965-459C-9C86-797046E44C25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5316E11-7965-459C-9C86-797046E44C25}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{A5316E11-7965-459C-9C86-797046E44C25}.Test|Any CPU.Build.0 = Test|Any CPU
+		{6360E355-3610-40EE-82D8-465E0DBBD96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6360E355-3610-40EE-82D8-465E0DBBD96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6360E355-3610-40EE-82D8-465E0DBBD96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6360E355-3610-40EE-82D8-465E0DBBD96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6360E355-3610-40EE-82D8-465E0DBBD96E}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{6360E355-3610-40EE-82D8-465E0DBBD96E}.Test|Any CPU.Build.0 = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

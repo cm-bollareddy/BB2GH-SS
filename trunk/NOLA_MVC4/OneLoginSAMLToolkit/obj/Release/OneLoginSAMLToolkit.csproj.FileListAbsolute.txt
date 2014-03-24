@@ -1,0 +1,4 @@
+C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\bin\Release\OneLoginSAMLToolkit.dll
+C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\bin\Release\OneLoginSAMLToolkit.pdb
+C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\obj\Release\OneLoginSAMLToolkit.dll
+C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\obj\Release\OneLoginSAMLToolkit.pdb
