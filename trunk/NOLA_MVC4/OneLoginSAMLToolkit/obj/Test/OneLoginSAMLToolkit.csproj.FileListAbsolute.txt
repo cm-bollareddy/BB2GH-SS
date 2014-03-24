@@ -1,5 +1,0 @@
-C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\bin\Test\OneLoginSAMLToolkit.dll
-C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\bin\Test\OneLoginSAMLToolkit.pdb
-C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\obj\Test\OneLoginSAMLToolkit.dll
-C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\obj\Test\OneLoginSAMLToolkit.pdb
-C:\Projects\NOLA_MVC4\OneLoginSAMLToolkit\obj\Test\OneLoginSAMLToolkit.csprojResolveAssemblyReference.cache
