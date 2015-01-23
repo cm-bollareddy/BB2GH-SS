@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Projects\NOLA_MVC4\NOLA_MVC4\obj\SSO Dev\Package\PackageTmp" managedRuntimeVersion="v4.0" />
+  <setAcl path="C:\Projects\NOLA_MVC4\NOLA_MVC4\obj\SSO Dev\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Projects\NOLA_MVC4\NOLA_MVC4\obj\SSO Dev\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

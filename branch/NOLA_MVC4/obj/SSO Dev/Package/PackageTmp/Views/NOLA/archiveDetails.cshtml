@@ -1,0 +1,82 @@
+﻿@model NOLA_MVC4.Models.nola_programs
+@{
+    ViewBag.Title = "archiveDetails";
+}
+
+<h2>Program Details</h2>
+
+@ViewBag.errorText
+
+@Html.ActionLink("Go back to your results", "Index", new { titleSearchString = "crab" }, new AjaxOptions { HttpMethod = "POST" }) 
+
+
+<p>
+        <b>Program Details for the following NOLA: @Html.DisplayFor(d => d.nola)
+            <asp:Label ID="lblNOLA" runat="server" Width="144px"></asp:Label></b>
+    </p>
+    <table border="1px" border-color="#666666" class="table4column">
+        <tr>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.subscript_rpt_trans)</b></td>
+            <td colspan="3">     
+                @Html.DisplayFor(d => d.subscript_rpt_trans)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.series_title)</b></td>
+            <td colspan="3">
+                @Html.DisplayFor(d => d.series_title)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.program_title)</b></td>
+            <td colspan="3">
+                @Html.DisplayFor(d => d.program_title)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.episode_title)</b></td>
+            <td colspan="3">
+                @Html.DisplayFor(d => d.episode_title)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.program_length)</b></td>
+            <td colspan="3">
+                @TimeSpan.FromSeconds(Model.program_length).ToString()
+            </td>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.obdate)</b></td>
+            <td colspan="3">
+                @Html.DisplayFor(d => d.obdate)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.uplink)</b></td>
+            <td colspan="3">
+                @Html.DisplayFor(d => d.uplink)
+            </td>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.live_origination)</b></td>
+            <td colspan="3">
+                @Html.DisplayFor(d => d.live_origination)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.original_distributor)</b></td>
+            <td colspan="3">
+                @Html.DisplayFor(d => d.original_distributor)
+            </td>
+            <td>
+                <b class="black">@Html.DisplayNameFor(d => d.current_distributor)</b></td>
+            <td colspan="3">
+                @Html.DisplayFor(d => d.current_distributor)
+            </td>
+        </tr>
+    </table>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <contentPath path="C:\Projects\NOLA_MVC4\NOLA_MVC4\obj\Test\Package\PackageTmp" />
+  <setAcl path="C:\Projects\NOLA_MVC4\NOLA_MVC4\obj\Test\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Projects\NOLA_MVC4\NOLA_MVC4\obj\Test\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

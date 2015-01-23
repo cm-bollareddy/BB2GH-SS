@@ -1,0 +1,43 @@
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
+
+namespace NOLA_MVC4.Models.Mapping
+{
+    public class nola_schedule_del_jnlMap : EntityTypeConfiguration<nola_schedule_del_jnl>
+    {
+        public nola_schedule_del_jnlMap()
+        {
+            // Primary Key
+            this.HasKey(t => new { t.sched_date, t.start_time, t.sched_id });
+
+            // Properties
+            this.Property(t => t.start_time)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+
+            this.Property(t => t.sched_id)
+                .IsRequired()
+                .IsFixedLength()
+                .HasMaxLength(4);
+
+            this.Property(t => t.version_nola)
+                .IsRequired()
+                .IsFixedLength()
+                .HasMaxLength(14);
+
+            this.Property(t => t.whodidit)
+                .IsRequired()
+                .IsFixedLength()
+                .HasMaxLength(32);
+
+            // Table & Column Mappings
+            this.ToTable("nola_schedule_del_jnl");
+            this.Property(t => t.sched_date).HasColumnName("sched_date");
+            this.Property(t => t.start_time).HasColumnName("start_time");
+            this.Property(t => t.sched_id).HasColumnName("sched_id");
+            this.Property(t => t.version_nola).HasColumnName("version_nola");
+            this.Property(t => t.element_index).HasColumnName("element_index");
+            this.Property(t => t.timestamp).HasColumnName("timestamp");
+            this.Property(t => t.whodidit).HasColumnName("whodidit");
+        }
+    }
+}
